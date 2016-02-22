@@ -67,7 +67,7 @@ class WhoopsListener implements EventSubscriberInterface
             return;
         }
 
-        // We don't want to show Whoops! screens for requests that trigger a 404. 
+        // We don't want to show Whoops! screens for requests that trigger a 404.
         if ($event->getException() instanceof NotFoundHttpException) {
             return;
         }
